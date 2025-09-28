@@ -21,7 +21,7 @@ do
     echo $instance: $IP
 
     aws route53 change-resource-record-sets \
-  --hosted-zone-id Z07208883KMWCX5CSNILL \
+  --hosted-zone-id $ZONE_ID \
   --change-batch '
   {
     "Comment": "Updating record set"
