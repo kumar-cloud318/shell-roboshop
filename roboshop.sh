@@ -16,7 +16,7 @@ do
         IP=$(aws ec2 describe-instances --instance-ids i-0a022bee972696a59 --query 'Reservations[0].Instances[0].Public
         IpAddress' --output text)
 
-    if
+    fi
 
     echo $instance:$IP
 done
